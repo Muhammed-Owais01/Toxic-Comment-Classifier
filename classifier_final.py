@@ -167,6 +167,7 @@ os.makedirs('models', exist_ok=True)
 
 tokenizer = Tokenizer(num_words=MAX_VOCAB, oov_token='<OOV>')
 tokenizer.fit_on_texts(train['comment_text'])
+joblib.dump(tokenizer, "models/tokenizer.pkl")
 
 X_train_seq = pad_sequences(tokenizer.texts_to_sequences(train['comment_text']), maxlen=MAX_LEN, padding='post')
 y_train = train['toxicity'].values
