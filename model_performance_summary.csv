@@ -1,0 +1,7 @@
+Model,Accuracy Mean,Accuracy Std,Specificity Mean,Specificity Std,Falsedisc.rate Mean,Falsedisc.rate Std
+cnn_fix,0.913,0.003,0.924,0.008,0.078,0.007
+cnn_rand,0.716,0.007,0.713,0.038,0.284,0.018
+knn,0.568,0.032,0.593,0.432,0.254,0.205
+lda,0.85,0.004,0.885,0.007,0.124,0.006
+nb,0.874,0.003,0.872,0.006,0.127,0.005
+svm,0.897,0.005,0.913,0.007,0.09,0.006
